@@ -33,3 +33,7 @@ Route::post('/contact', function () {
 Route::get('/signin', function () {
     return view('pages.signin');
 });
+
+Route::get('/testsignin', function () {
+    return view('pages.testsignin');
+});

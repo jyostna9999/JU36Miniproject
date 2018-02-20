@@ -16,7 +16,7 @@
 
     @include('includes.jsfooter')
 
-    <footer>
+    <footer class="blockquote-footer text-center">
         @include('includes.footer')
     </footer>
     </div>
