@@ -34,6 +34,10 @@ Route::get('/signin', function () {
     return view('pages.signin');
 });
 
-Route::get('/testsignin', function () {
+/*Route::get('/testsignin', function () {
     return view('pages.testsignin');
+});*/
+
+Route::get('/signup', function () {
+    return view('pages.signup');
 });
