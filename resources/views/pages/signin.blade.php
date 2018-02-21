@@ -26,9 +26,11 @@
             <div class="text-center justify-content-center mr-5">
                 <button type="submit" class="btn btn-primary">Sign in</button>
                 <a class="dropdown-item mt-2 ml-4" href="#">New around here? Sign up</a>
-                <a class="dropdown-item mr-1" href="#">Forgot password?</a>
+                <a class="dropdown-item mr-2" href="#">Forgot password?</a>
             </div>
+        </div>
+        </div>
     </form>
-    </div>
-    </div>
+
+
 @endsection
