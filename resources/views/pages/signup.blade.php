@@ -8,7 +8,6 @@
         </div>
         <h2 class="text-center mr-5">Create a new account</h2>
         <div class="container mt-3">
-
             <div class="form-group row justify-content-center">
                 <label for="example-text-input" class="col-2 col-form-label">Name</label>
                 <div class="col-5">
@@ -37,9 +36,6 @@
                 <button type="submit" class="btn btn-primary">Sign in</button>
             </div>
         </div>
-
     </form>
-
-
 
 @endsection

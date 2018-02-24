@@ -26,8 +26,10 @@ Route::get('/contact', function () {
 Route::post('/contact', function () {
     //dd(request());
     $data = request()->all();
+    echo "Name:" .$data['name']. '<br>';
     echo "Email: " . $data['email'] . '<br>';
-    echo "Message: " . $data['body'];
+    echo "Message: " . $data['body'].'<br>';
+
 });
 
 Route::get('/signin', function () {
@@ -40,4 +42,12 @@ Route::get('/signin', function () {
 
 Route::get('/signup', function () {
     return view('pages.signup');
+});
+
+Route::get('/viewmessages', function () {
+    return view('pages.viewmessages');
+});
+
+Route::get('/viewcardmessage', function () {
+    return view('pages.viewcardmessage');
 });
