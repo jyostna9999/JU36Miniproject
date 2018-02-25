@@ -25,6 +25,9 @@
                 <a class="nav-link" href="{{route('viewmessages')}}">View Messages</a>
             </li>
             <li class="nav-item">
+                <a class="nav-link" href="{{route('viewcardmessage')}}">View Contact Messages</a>
+            </li>
+            <li class="nav-item">
                 <a class="nav-link" href="/logout">Logout</a>
             </li>
 

@@ -18,22 +18,15 @@ class PagesController extends Controller
     {
         return view('pages.contact');
     }
-    function store(Request $request)
+
+    function contactpost()
     {
-       // dd($request);
-
-        $name = request()-> name;
-        $email = request() -> email;
-
-        return redirect() -> route('thanks',['name' => $name,'email' => $email]);
+        $data = request()->all();
+        echo "Name: " . $data['name'] . '<br>';
+        echo "Email: " . $data['email'] . '<br>';
+        echo "Subject: " .$data['subject']. '<br>';
+        echo "Message: " . $data['body'].'<br>';
     }
-
-    function thanks($name,$email)
-    {
-        //return view('pages.thankyou')->with(compact('name'));
-        return view('pages.thankyou')->with(compact(['name','email']));
-    }
-
     function signin()
     {
         return view('pages.signin');
@@ -50,8 +43,27 @@ class PagesController extends Controller
     {
         return view('pages.viewcardmessage');
     }
+
     function logout()
     {
         return view('pages.logout');
     }
+
+    /* -- Code for 'Thank you' message
+        function store(Request $request)
+        {
+           // dd($request);
+
+            $name = request()-> name;
+            $email = request() -> email;
+
+            return redirect() -> route('thanks',['name' => $name,'email' => $email]);
+        }
+
+        function thanks($name,$email)
+        {
+            //return view('pages.thankyou')->with(compact('name'));
+            return view('pages.thankyou')->with(compact(['name','email']));
+        }
+    */
 }

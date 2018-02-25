@@ -17,10 +17,9 @@ Route::get('/about', 'PagesController@about')->name('about');
 
 Route::get('/contact', 'PagesController@contact')-> name('contact');
 
-//Route::post('/contact', 'PagesController@store')-> name('contact.store');
-//Route::get('/thanks/{name}/{email}', 'PagesController@thanks')-> name('thanks');
+Route::post('/contact', 'PagesController@contactpost')-> name('contactpost');
 
-//Code for Mini Project
+/*Code befire implementing Name Routes
  Route::post('/contact', function () {
     //dd(request());
     $data = request()->all();
@@ -29,7 +28,7 @@ Route::get('/contact', 'PagesController@contact')-> name('contact');
     echo "Subject: " .$data['subject']. '<br>';
     echo "Message: " . $data['body'].'<br>';
 
-});
+});*/
 
 Route::get('/signin','PagesController@signin')-> name('sign.in');
 
@@ -38,4 +37,9 @@ Route::get('/signup', 'PagesController@signup')->name('sign.up');
 Route::get('/viewmessages', 'PagesController@viewmessages')->name('viewmessages');
 
 Route::get('/viewcardmessage','PagesController@viewcardmessage')->name('viewcardmessage');
+
 Route::get('/logout','PagesController@logout')->name('logout');
+
+/* Can use for thank you message
+ Route::post('/contact', 'PagesController@store')-> name('contact.store');
+Route::get('/thanks/{name}/{email}', 'PagesController@thanks')-> name('thanks');*/
