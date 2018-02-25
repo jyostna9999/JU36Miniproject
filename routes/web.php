@@ -11,43 +11,29 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
+Route::get('/', 'PagesController@home')->name('home');
 
-Route::get('/about', function () {
-    return view('pages.about');
-});
+Route::get('/about', 'PagesController@about')->name('about');
 
-Route::get('/contact', function () {
-    return view('pages.contact');
-});
+Route::get('/contact', 'PagesController@contact')-> name('contact');
 
-Route::post('/contact', function () {
+Route::post('/contact', 'PagesController@store')-> name('contact.store');
+Route::get('/thanks/{name}/{email}', 'PagesController@thanks')-> name('thanks');
+
+/* Code for Mini Project
+ * Route::post('/contact', function () {
     //dd(request());
     $data = request()->all();
     echo "Name:" .$data['name']. '<br>';
     echo "Email: " . $data['email'] . '<br>';
     echo "Message: " . $data['body'].'<br>';
 
-});
-
-Route::get('/signin', function () {
-    return view('pages.signin');
-});
-
-/*Route::get('/testsignin', function () {
-    return view('pages.testsignin');
 });*/
 
-Route::get('/signup', function () {
-    return view('pages.signup');
-});
+Route::get('/signin','PagesController@signin')-> name('sign.in');
 
-Route::get('/viewmessages', function () {
-    return view('pages.viewmessages');
-});
+Route::get('/signup', 'PagesController@signup')->name('sign.up');
 
-Route::get('/viewcardmessage', function () {
-    return view('pages.viewcardmessage');
-});
+Route::get('/viewmessages', 'PagesController@viewmessages')->name('viewmessages');
+
+Route::get('/viewcardmessage','PagesController@viewcardmessage')->name('viewcardmessage');
