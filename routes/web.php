@@ -19,7 +19,7 @@ Route::get('/contact', 'PagesController@contact')-> name('contact');
 
 Route::post('/contact', 'PagesController@contactpost')-> name('contactpost');
 
-/*Code befire implementing Name Routes
+/* Code before implementing Controller part
  Route::post('/contact', function () {
     //dd(request());
     $data = request()->all();
