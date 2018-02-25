@@ -37,3 +37,4 @@ Route::get('/signup', 'PagesController@signup')->name('sign.up');
 Route::get('/viewmessages', 'PagesController@viewmessages')->name('viewmessages');
 
 Route::get('/viewcardmessage','PagesController@viewcardmessage')->name('viewcardmessage');
+Route::get('/logout','PagesController@logout')->name('logout');
