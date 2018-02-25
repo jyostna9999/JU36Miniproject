@@ -9,9 +9,9 @@
             <p class="card-text">This is the static content for now. Redirecting to respective pages (dynamically) will be done after DB is covered</p>
 
                 <ul class="list-group list-group-flush">
-                    <li class="list-group-item">Subject:</li>
-                    <li class="list-group-item">From Email:</li>
-                    <li class="list-group-item">Message:</li>
+                    <li class="list-group-item">Subject: Issue while logging in</li>
+                    <li class="list-group-item">From Email: abc@gmail.com</li>
+                    <li class="list-group-item">Message: Hello.. I am not able to login to my account</li>
                 </ul>
             </div>
 

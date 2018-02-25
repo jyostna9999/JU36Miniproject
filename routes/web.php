@@ -20,12 +20,12 @@ Route::get('/contact', 'PagesController@contact')-> name('contact');
 Route::post('/contact', 'PagesController@store')-> name('contact.store');
 Route::get('/thanks/{name}/{email}', 'PagesController@thanks')-> name('thanks');
 
-/* Code for Mini Project
+/*Code for Mini Project
  * Route::post('/contact', function () {
     //dd(request());
     $data = request()->all();
-    echo "Name:" .$data['name']. '<br>';
     echo "Email: " . $data['email'] . '<br>';
+    echo "Subject:" .$data['subject']. '<br>';
     echo "Message: " . $data['body'].'<br>';
 
 });*/
