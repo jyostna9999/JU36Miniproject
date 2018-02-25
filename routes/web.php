@@ -17,7 +17,7 @@ Route::get('/about', 'PagesController@about')->name('about');
 
 Route::get('/contact', 'PagesController@contact')-> name('contact');
 
-Route::post('/contact', 'PagesController@contactpost')-> name('contactpost');
+Route::post('/contact', 'PagesController@contactpost')-> name('contact.post');
 
 /* Code before implementing Controller part
  Route::post('/contact', function () {
