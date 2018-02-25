@@ -22,11 +22,12 @@
                 <a class="nav-link" href="{{route('sign.in')}}">Sign In</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="/logout">Logout</a>
-            </li>
-            <li class="nav-item">
                 <a class="nav-link" href="{{route('viewmessages')}}">View Messages</a>
             </li>
+            <li class="nav-item">
+                <a class="nav-link" href="/logout">Logout</a>
+            </li>
+
         </ul>
 
     </div>
