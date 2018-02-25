@@ -26,7 +26,7 @@ Route::get('/contact', 'PagesController@contact')-> name('contact');
     $data = request()->all();
     echo "Name: " . $data['name'] . '<br>';
     echo "Email: " . $data['email'] . '<br>';
-    echo "Subject:" .$data['subject']. '<br>';
+    echo "Subject: " .$data['subject']. '<br>';
     echo "Message: " . $data['body'].'<br>';
 
 });
